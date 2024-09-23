@@ -1,0 +1,54 @@
+html {
+  --s: 1px;
+  --darkreader-bg--c1: #1f2223;
+  --darkreader-bg--c2: #35393b;
+  --darkreader-bg--c3: #52585c;
+  --_g: 0 120deg, #0000 0;
+  background: conic-gradient(from 0deg at calc(500%/6) calc(100%/3), var(--darkreader-bg--c3) var(--_g)), conic-gradient(from -120deg at calc(100%/6) calc(100%/3), var(--darkreader-bg--c2) var(--_g)), conic-gradient(from 120deg at calc(100%/3) calc(500%/6), var(--darkreader-bg--c1) var(--_g)), conic-gradient(from 120deg at calc(200%/3) calc(500%/6), var(--darkreader-bg--c1) var(--_g)), conic-gradient(from -180deg at calc(100%/3) 50%, var(--darkreader-bg--c2) 60deg, var(--darkreader-bg--c1) var(--_g)), conic-gradient(from 60deg at calc(200%/3) 50%, var(--darkreader-bg--c1) 60deg, var(--darkreader-bg--c3) var(--_g)), conic-gradient(from -60deg at 50% calc(100%/3), var(--darkreader-bg--c1) 120deg, var(--darkreader-bg--c2) 0 240deg, var(--darkreader-bg--c3) 0);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  font-size: larger;
+  color: white;
+}
+
+.form-container {
+  width: 500px;
+  background-color: #111111;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+button {
+  border-radius: 4px;
+  border: unset;
+  padding: 15px 30px;
+  font-size: larger;
+}
+
+button {
+  background-color: #999999;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.errormsg {
+  color: #950000
+}
+
+.oculto {
+  display: none;
+}
